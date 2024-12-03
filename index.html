@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="framework/w3.css">
+    <link rel="stylesheet" href="styles/cssStyles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/9c02f2e909.js" crossorigin="anonymous"></script>
+
+    <title>Meu Portifólio</title>
+</head>
+
+<body class="w3-white">
+
+
+    <div class="header-bar">
+        <!--iconPage-->
+        <div class="flexgenerate">
+            <img class="imageborder" src="assets/FrontIconHeader.png" alt="icone da página ">
+            <p style="margin-left:30px;" class="w3-text-white"> DESENVOLVEDOR FRONTEND</p>
+        </div>
+
+        <!--Navbar-->
+        <nav>
+            <!-- Section Sobre-->
+            <a href="#sobre"> Sobre
+                <i class="fa fa-user w3-xx w3-margin"></i>
+            </a>
+
+            <!-- Section Skills-->
+            <a href="#skill"> Skill's
+                <i class="fa fa-connectdevelop w3-xx w3-margin"></i>
+            </a>
+
+            <!-- Section Projetos-->
+            <a href="#Competências"> Competências
+                <i class="fa fa-handshake w3-xx w3-margin"></i>
+            </a>
+
+
+            <!-- Section Contatos-->
+            <a href="#contatos"> Contatos
+                <i class="fa fa-envelope w3-xx w3-margin"></i>
+            </a>
+
+            <!--Botão para download CV-->
+            
+                <a id="button" href="#"> Download CV </a>
+            
+        </nav>
+    </div>
+
+    <main id="#main">
+
+        <!--Section SOBRE-->
+        <section class="w3-padding-64 w3-content" id="sobre">
+            <h2 class="w3-center w3-text-black text-boxShadow">Sobre Mim</h2>
+            <hr style="width: 200px;" class="w3-opacity">
+
+            <div class="w3-row w3-row-padding ">
+                <!-- Pedro Higor -->
+                <div class="w3-half w3-center">
+                    <img src="assets/perfil.jpg" alt="Foto de perfil de Pedro Higor Santos Gama"
+                        class="imageborder-radius w3-image w3-border" width="60%">
+                </div>
+                <div class="w3-half slides2"> <!--Card1-->
+                    <div class="w3-card w3-padding">
+                        <h2 class="w3-black w3-center">Pedro Higor Santos Gama</h2>
+                        <div class="w3-text-black">
+                            <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">👨‍💻 Objetivo
+                            </h3>
+                            <p>- Desenvolvedor FrontEnd.</p>
+                            <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">Sobre
+                            </h3>
+                            <p>- 📌 Pedro Higor, tenho 21 anos e estou construindo minha carreira como Desenvolvedor
+                                Front-End.<br>Estudo Análise e Desenvolvimento de Sistemas no Centro Paula Souza, onde
+                                aperfeiçoo minhas habilidades em HTML, CSS, JavaScript, Java e práticas de metodologias
+                                ágeis (Scrum).</p>
+                            <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">Formação acadêmica
+                            </h3>
+                            <p>- 🎓Técnico em Desenvolvimento de sistemas pela ETEC. <br>- 🎓Técnico em Informática para
+                                internet pela CPET.</p>
+                            <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">Atuação Profissional
+                            </h3>
+                            <p>- Atualmente Técnico em Informática. <br>- Procuro estágio na área de FrontEnd.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-half slides2"> <!--Card2-->
+                    <div class="w3-card w3-padding">
+                        <h2 class="w3-black w3-center">Pedro Higor Santos Gama </h2>
+                        <div class="w3-text-black">
+                            <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">📌 Destaques:
+                            </h3>
+                            <p>- Front-End: HTML, CSS, JavaScript, design responsivo.<br>
+                                - Metodologias Ágeis: Scrum.<br>
+                                - Colaboração e Adaptabilidade: Experiência em suporte técnico e resolução de problemas.
+                            </p>
+                            <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">Idiomas
+                            </h3>
+                            <p>- Português: Nativo <br>
+                                - Inglês: Básico <br>
+                                - Espanhol: Básico</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="w3-center w3-margin">
+                <button style="margin-right:30%;" class="w3-button w3-black " onclick="plusDivss(-1)">&#10094;</button>
+                <button style="margin-left: 30%;" class="w3-button w3-black " onclick="plusDivss(1)">&#10095;</button>
+            </div>
+
+            <script> /* > Script slide sobre <*/
+
+                var slideIndexx = 1;
+                showDivss(slideIndexx);
+                function plusDivss(n) {
+                    showDivss(slideIndexx += n);
+                }
+                function showDivss(n) {
+                    var i;
+                    var x = document.getElementsByClassName("slides2");
+                    if (n > x.length) { slideIndexx = 1 }
+                    if (n < 1) { slideIndexx = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndexx - 1].style.display = "block";
+                }
+            </script>
+
+        </section> <!--Fim Section Sobre-->
+
+        <!--Seção Skills-->
+        <section class="w3-content w3-padding-64" id="skill">
+            <h2 class=" w3-center text-boxShadow">Skill's e Tecnologias</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+
+            <div class="w3-row w3-row-padding">
+                <div class="slides">
+                    <div class="w3-half w3-center">
+
+                        <img src="icons tecno/html5.png" alt="icone Html" style="width: 50%;"
+                            class="w3-opacity w3-hover-opacity-off ">
+                        <img src="icons tecno/css3.png" alt="" style="width: 37%;"
+                            class="w3-opacity w3-hover-opacity-off ">
+                        <img src="icons tecno/JavaScript.webp" alt="" style="width: 40%;"
+                            class="w3-opacity w3-hover-opacity-off ">
+                    </div>
+
+                    <div class="w3-half "> <!-- Tecnologias 1-->
+                        <div class="w3-card w3-padding">
+                            <h2 class="w3-black w3-center ">Técnologias</h2>
+                            <div>
+
+                                <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">HTML
+                                </h3>
+                                <p>- estrutura básica do conteúdo da página, como textos, imagens, links, listas,
+                                    formulários, entre outros elementos. </p>
+
+                                <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">CSS
+                                </h3>
+                                <p>- controle de layout, cores, fontes, tamanhos e outros aspectos visuais dos elementos
+                                    HTML.</p>
+
+                                <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">JAVASCRIPT
+                                </h3>
+                                <p>- adicionar funcionalidades interativas, como animações, formulários interativos,
+                                    validação de dados, manipulação de elementos da página, entre outras.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------------------------------------------------------------------------------------------------------------------------->
+                <div class="slides">
+                    <div class="w3-half w3-center"><!-- Tecnologias 2-->
+
+                        <img src="icons tecno/Java.png" alt="icone Html" style="width: 50%;"
+                            class="w3-opacity w3-hover-opacity-off ">
+                        <img src="icons tecno/Visual_Studio_Code_1.35_icon.svg.png" alt="" style="width: 37%;"
+                            class="w3-opacity w3-hover-opacity-off ">
+
+                    </div>
+
+                    <div class="w3-half ">
+                        <div class="w3-card w3-padding">
+                            <h2 class="w3-black w3-center ">Técnologias</h2>
+                            <div>
+
+                                <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">VScode
+                                </h3>
+                                <p>- editor de código-fonte desenvolvido pela Microsoft. </p>
+
+                                <h3 class="w3-opacity w3-hover-opacity-off" style="margin-top: 25px;">CSS
+                                </h3>
+                                <p>- linguagem de programação orientada a objetos. </p>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-center w3-margin">
+                <button style="margin-right:30%;" class="w3-button w3-black " onclick="plusDivs(-1)">&#10094;</button>
+                <button style="margin-left: 30%;" class="w3-button w3-black " onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <script> /* > Script slide skills <*/
+
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+
+        </section> <!--FIM Seção Skills-->
+
+        <section class="w3-content w3-padding-64" id="Competências"> <!-- Seção Competências -->
+            <h2 class="w3-text-black w3-center text-boxShadow">Competências Desenvolvidas</h2>
+            <hr class="w3-opacity w3-center" style="width:200px">
+
+            <ul class="w3-ul w3-hoverable w3-center w3-white">
+                <li class="w3-black w3-xlarge w3-padding-32">Objetivos de Formação 2025-2026:</li>
+                <li class="w3-padding-16">Desenvolver e operar sistemas, aplicações e interfaces gráficas.</li>
+                <li class="w3-padding-16">Montar e realizar manutenção em estruturas de banco de dados.</li>
+                <li class="w3-padding-16">Codificar programas e projetar, implantar e customizar sistemas de aplicações.
+                </li>
+                <li class="w3-padding-16">Selecionar programas de aplicação e sistemas operacionais a partir da
+                    avaliação das necessidades do usuário.</li>
+                <li class="w3-padding-16">Agir de forma a minimizar os riscos inerentes à segurança de informações,
+                    relacionando e aplicando soluções adequadas.</li>
+                <li class="w3-padding-16">Identificar oportunidades e tendências no mundo digital.</li>
+            </ul>
+
+            <div class="w3-row w3-padding-16 w3-section w3-light-grey w3-center">
+                <div class="w3-third w3-section">
+
+                </div>
+                <div class="w3-third w3-section">
+
+                </div>
+                <div class="w3-third w3-section">
+
+                </div>
+            </div>
+        </section> <!-- Fim Seção Competências -->
+
+        <!--Seção Contatos-->
+        <section class="w3-padding-128 w3-content w3-text-grey" id="contatos">
+            <h2 class="w3-text-black w3-center text-boxShadow">Contato</h2>
+            <hr style="width: 200px;" class="w3-opacity">
+
+            <div class="w3-section">
+                <p>
+                    <i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-marginright"></i> Guarujá-SP, Brasil
+                </p>
+                <p>
+                    <i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-marginright"></i> Telefone: 11
+                    3333-3333(ficticio)
+                </p>
+                <p>
+                    <i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-marginright"> </i> Email:
+                    PedroHigor082019@outlook.com
+                </p>
+
+
+                <form><!--Formulario-->
+                    <div class="w3-card w3-padding">
+                        <p>
+                            <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
+                        </p>
+
+                        <p>
+                            <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+                        </p>
+
+                        <p>
+                            <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required
+                                name="Assunto">
+                        </p>
+
+                        <p>
+                            <input class="w3-input w3-padding-16" type="text" placeholder="Mensagem" required
+                                name="Mensagem">
+                        </p>
+                    </div>
+                    <p>
+                        <button class="w3-button w3-light-grey w3-padding-large" type="submit"><i
+                                class="fa fa-paper-plane"></i> Enviar mensagem</button>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section> <!--FIM Seção Contatos-->
+
+
+
+    </main>
+
+    <footer class="footerMod ">
+
+        <h3 style="font-size: x-small;"> <img
+                src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+                alt="" width="30px" style="margin-right: 20px;">pedrohigor001</h3>
+
+    </footer>
+
+</body>
+
+</html>

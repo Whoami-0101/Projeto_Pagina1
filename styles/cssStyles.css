@@ -1,0 +1,85 @@
+body{
+   margin: 0;
+   padding: 0;
+   font-family: 'fira code';
+}
+.header-bar{
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    border-bottom: 10px solid   rgb(76, 106, 241);
+    padding: 10px 25px ;
+}
+nav{
+    text-align: right;
+}
+a{
+    display: inline-flex;
+    align-items: center;
+    font-family: 'fira code';
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+}
+a:hover{
+    color: rgb(128, 128, 128);
+
+}
+a::before{
+    content: "";
+    background-color: rgb(76, 106, 241);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+#button{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 18px 20px;
+    box-shadow: 5px 5px 0 gray;
+    margin-right: 0;
+}
+
+.flexgenerate{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-flow:nowrap;
+    flex-wrap: nowrap;
+    gap: 1px;
+}
+#button:hover{
+    color: rgb(182, 73, 245);
+}
+
+.imageborder{
+    position:relative;
+    border-radius: 8px;
+    width: 80px;
+}
+.imageborder-radius {
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(83, 46, 3, 0.582);
+}
+
+.headerhover {
+    box-shadow: 5px 5px 20px black;
+}
+.text-boxShadow{
+    box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.096);
+}
+
+.footerMod{
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(20, 22, 32);
+    color: white;
+}
